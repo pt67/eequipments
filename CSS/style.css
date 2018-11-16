@@ -1,0 +1,197 @@
+*{
+text-align: center;
+font-family: sans-serif;
+}
+
+body{
+max-width: 100%;
+margin:0;
+background:url("../IMAGES/pexels-photo.jpg") no-repeat;
+background-size: cover;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+outline:none;
+}
+/* =============heading style =========================*/
+
+.head-wrapper{
+padding:10px;
+max-width: 100%;
+background:#333;
+position: fixed;
+bottom: 0px;
+left: 0px;
+right: 0px;
+background-image:linear-gradient(white, black);
+text-shadow:3px 2px 1px black;
+z-index:3;
+}
+.head-wrapper:before{
+opacity: 0.3;
+}
+/*============ Menu styles================*/
+.menu ul li{
+display: inline-block;
+padding:10px;
+text-transform: uppercase;
+font-weight: bold;
+}
+.menu ul li a:hover{
+text-decoration:underline; 
+text-decoration-color:red; 
+text-decoration-style:solid; 
+}
+
+/* ====================Pointer style========================= */
+
+.menu #pflo{
+    cursor:url(../IMAGES/pointer1.png), auto;
+}
+.menu #abt{
+    cursor:url(../IMAGES/pointer2.png), auto;
+}
+.menu #cont{
+    cursor:url(../IMAGES/pointer3.png), auto;
+}
+/* =====================intro style======================= */
+.show-case{
+padding:15% 10%;
+}
+#intro{
+text-transform: uppercase;
+font-weight: bold;
+font-style: italic;
+font-size: 3em;
+text-shadow:3px 2px 1px black;
+color: #333;
+animation:intro 3s infinite;
+}
+
+@keyframes intro{
+to{color: white;}
+from{color: black;}
+}
+
+/* ====================Portfolio style============================== */
+
+#portfolio{
+    display: none;
+    background:#fff;
+    padding:5% 10%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:90px;
+    animation:dimit 2s;
+}
+#portfolio .flexer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flexer .flex{
+    padding:10px;
+    background:gray;
+}
+.flex:not(:first-child){
+    margin-left:5px;
+}
+.flex h3, .flex p{
+    text-align:left;
+}
+.flex p{color:rgb(241, 234, 234);}
+.flex h3{
+    border-bottom:1px solid red;
+    color:#fff;
+}
+.flex img{
+ height:200px;
+ width:360px;
+}
+/* ========================Aboutme style================================= */
+#aboutme{
+    display: none;
+    background:#fff;
+    padding:5% 10%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:90px;
+    animation:dimit 2s;
+}
+
+/* ============================Contactme style================================== */
+#contactme{
+    display: none;
+    background:#fff;
+    padding:5% 10%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:90px;
+    animation:dimit 2s;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+}
+form input[type="text"]{
+    padding:5px;
+    border: 2px solid #fff;
+    border-bottom:2px solid red;
+    margin-bottom:10px;
+    text-align:left;
+}
+form input[type="email"]{
+    padding:5px;
+    border: 2px solid #fff;
+    border-bottom:2px solid red;
+    margin-bottom:10px;
+    text-align:left;
+}
+form textarea{
+    padding:5px;
+    border: 2px solid #fff;
+    border-bottom:2px solid red;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+form input[type="submit"]{
+    padding:5px;
+    background:red;
+    border:none;
+    box-shadow: 3px 2px solid #333;
+}
+
+form a{
+    color:#333;
+    text-align:left;
+    float:left;
+    margin-top:40px;
+}
+form a img{
+    height:60px;
+    margin-bottom:-2px;
+}
+/* =====================Global styles======================== */
+@keyframes dimit{
+   0%{left:50%;}
+   100%{left:0%;}
+}
+
+.content h1{
+    text-transform: uppercase;
+    font-size:3em;
+    font-style:italic;
+}
+.content h1::first-letter{
+    color:red;
+}
