@@ -1,4 +1,4 @@
-# Equipments on website
+# Equipments on web
 
 ### A better way for tracking equipments remotely
 
