@@ -12,14 +12,16 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const home_controller_1 = require("./home/home.controller");
 const home_service_1 = require("./home/home.service");
+const equipment_controller_1 = require("./equipment/equipment.controller");
+const equipment_service_1 = require("./equipment/equipment.service");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [],
-        controllers: [app_controller_1.AppController, home_controller_1.HomeController],
-        providers: [app_service_1.AppService, home_service_1.HomeService],
+        controllers: [app_controller_1.AppController, home_controller_1.HomeController, equipment_controller_1.EquipmentController],
+        providers: [app_service_1.AppService, home_service_1.HomeService, equipment_service_1.EquipmentService],
     })
 ], AppModule);
 //# sourceMappingURL=app.module.js.map

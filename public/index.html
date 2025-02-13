@@ -11,10 +11,18 @@
     <h1>Welcome to the Equipment Management System!</h1>
   </header>
   <main>
-    <p>Manage your equipments efficiently and effectively.</p>
+    <form id="equipment-form">
+      <input type="text" id="serial" placeholder="Serial Number" required>
+      <input type="text" id="name" placeholder="Equipment Name" required>
+      <input type="text" id="description" placeholder="Equipment Description" required>
+      <button type="submit">Add Equipment</button>
+    </form>
+    <ul id="equipment-list"></ul>
   </main>
   <footer>
     <p>&copy; 2023 Equipment Management System</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
